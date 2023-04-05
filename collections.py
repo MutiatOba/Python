@@ -59,47 +59,58 @@
 
 # key-value pair
 #value = data mechanism you wish to store the data in (e.g. string, int, list, another dictionary)
+#
+# student_1 = {
+#     "name": "Mutiat",
+#     "stream": "devops",
+#     "completed_lessons": 4,
+#     "completed_lesson_names": ["variable", "datatypes", "setup"]
+# }
+#
+# #access the disctionary
+#
+# print(student_1["stream"])
+#
+# #access a part of the list in the disctionary
+# print(student_1["completed_lesson_names"][0])
+#
+# #want to change a value in a dictionary
+# student_1["completed_lessons"] = 3
+# print(student_1["completed_lessons"])
+#
+# #changing an element of a list within a dictionary
+# student_1["completed_lesson_names"].remove("datatypes")
+# print(student_1["completed_lesson_names"])
+#
+# # dictionary methods
+#
+# print(student_1.keys())
+# print(student_1.values())
+#
+# # sets and frozen sets
+#
+# #sets in python is a list that has no oder/indexing
+# car_parts = {"wheels", "doors", "exhaust"}
+# print(car_parts)
+# car_parts.add("windows")
+# print(car_parts)
+# car_parts.discard("doors")
+# print(car_parts)
+#
+# #frozen sets - it is immutable
+#
+# x= frozenset([1, 2, 3, 4])
 
-student_1 = {
-    "name": "Mutiat",
-    "stream": "devops",
-    "completed_lessons": 4,
-    "completed_lesson_names": ["variable", "datatypes", "setup"]
-}
-
-#access the disctionary
-
-print(student_1["stream"])
-
-#access a part of the list in the disctionary
-print(student_1["completed_lesson_names"][0])
-
-#want to change a value in a dictionary
-student_1["completed_lessons"] = 3
-print(student_1["completed_lessons"])
-
-#changing an element of a list within a dictionary
-student_1["completed_lesson_names"].remove("datatypes")
-print(student_1["completed_lesson_names"])
-
-# dictionary methods
-
-print(student_1.keys())
-print(student_1.values())
-
-# sets and frozen sets
-
-#sets in python is a list that has no oder/indexing
-car_parts = {"wheels", "doors", "exhaust"}
-print(car_parts)
-car_parts.add("windows")
-print(car_parts)
-car_parts.discard("doors")
-print(car_parts)
-
-#frozen sets - it is immutable
-
-x= frozenset([1, 2, 3, 4])
 
 
-
+millionnaire = ["house", "cars", "boats", "food"]
+print(type(millionnaire)) # print type
+print(millionnaire[0]) # print first element
+print(millionnaire[1]) # print second element
+print(millionnaire[-1]) # last elelment
+millionnaire[0] = "chocolate"
+print(millionnaire)
+millionnaire.append("horse")
+print(millionnaire)
+millionnaire.pop()
+print(millionnaire)
